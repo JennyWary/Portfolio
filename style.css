@@ -1,0 +1,86 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+   /* width: 900px;*/
+    background-color: #343232;
+
+
+}
+
+nav{
+    background-color: #df9696;
+    width: 150px;
+    height: 20px;
+    border-radius: 20px;
+    padding: 15px 0 30px 15px;
+    margin: 30px 0 50px 850px;
+    position: relative;
+}
+
+aside{
+    background-color: #df9696;
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    padding:50px 30px;
+    top: 30px;
+
+}
+
+main{
+    background-color: #df9696;
+    width: 600px;
+    height: auto;
+    border-radius: 20px;
+    padding:50px 30px;
+    margin-left: 30px ;
+    position: relative;
+    left: 400px;
+
+}
+
+.info{
+    background-color: #323232;
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin-top: 70px;
+    color: white;
+}
+
+.grid-info{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid{
+
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 900px;
+    margin: 50px auto;
+
+}
+
+.item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.second{
+    width: 600px;
+    padding-left: 20px;
+}
+
+.sticky {
+    position: fixed;
+
+}
