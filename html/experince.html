@@ -7,72 +7,96 @@
 </head>
 <body>
     <nav>
-        <a href="experince.html">
+        <a data-scroll-nav="1" href="experince.html">
             <img src="../imgs/exp-white.png" alt="exp-white" width="40" height="40">
         </a>
-        <a href="techStack.html" style="margin-left: 50px">
+        <a data-scroll-nav="2" href="#" style="margin-left: 50px">
             <img src="../imgs/laptop-white.png" alt="laptop-white" width="40" height="40">
         </a>
+<!--        <a href="#" data-scroll-nav="0"><img src="../imgs/exp-white.png" alt="Icon 3" width="50" height="50"></a>-->
+
+<!--        <a href="#" data-scroll-nav="1"><img src="../imgs/laptop-white.png" alt="Icon 3" width="50" height="50"></a>-->
+
     </nav>
+
+
     <aside class="item1 sticky">
-        <h1>Jennifer Bramadas</h1>
-        <div>
-            <a>Linkedin</a>
-            <a>Github</a>
+        <h1 class="color-text" style="margin-left: 60px; color: #C20000">Jennifer Bramadas</h1>
+        <div class="socialm">
+            <a href="https://www.linkedin.com/in/jennifer-b-0a6566157/" style="margin-left: 50px">
+                <img src="../imgs/linkedin.png" alt="Linkedin" width="30" height="30">
+            </a>
+            <a href="https://github.com/JennyWary" style="margin-left: 50px">
+                <img src="../imgs/github.png" alt="GitHub" width="30" height="30">
+            </a>
         </div>
         <div class="info">
             <div class="grid-info">
-                <img class="item1" src="../imgs/mobile-white.png" alt="mobile-white" width="25" height="25">
-                <p>Handynummer</p>
-                <p>+4917630196670</p>
+                <div class="item1 icon-back">
+                    <img class="scroll-image" style="margin-bottom: 30px;" src="../imgs/image1.png" alt="mobile-white" width="25" height="25">
+                </div>
+                <div style="font-size: 10px; padding-left: 10px" >Handynummer</div>
+                <div style="padding-left: 10px; padding-top: 10px">+4917630196670</div>
             </div>
 
+            <div class="grid-info">
+                <div class="item1 icon-back">
 
-            <p>Email</p>
-            <p>j.bramadas@outlook.de</p>
+                    <img class="scroll-image" style="margin-bottom: 30px; margin-left: 2px" src="../imgs/image2.png" alt="umschlag red" width="20" height="20">
+                </div>
+                <div style="font-size: 10px; padding-left: 10px" >Email</div>
+                <div style="padding-left: 10px; padding-top: 10px">j.bramadas@outlook.de</div>
+            </div>
 
-            <p>Ort</p>
-            <p>Leonberg 71229</p>
+            <div class="grid-info">
+                <div class="item1 icon-back">
+                    <img class="scroll-image" style="margin-bottom: 30px; margin-left: 2px" src="../imgs/image3.png" alt="mobile-white" width="20" height="20">
+                </div>
+                <div style="font-size: 10px; padding-left: 10px" >Ort</div>
+                <div style="padding-left: 10px; padding-top: 10px">Leonberg 71229</div>
+            </div>
+
 
         </div>
 
     </aside>
-    <main>
+    <main data-scroll-index='0' >
         <!--Experince start-->
-        <div data-scroll-index='1' class="white">
-            <h1 class="purple">Berufserfahrung________________________</h1>
+        <div style="background-color: #343232; border-radius: 20px; padding-left: 20px; padding-top: 15px; margin-top: 50px">
+            <h1 class="color-text" style="text-align: center">Erfahrung</h1>
+            <h1 class="purple">Berufserfahrung______________________</h1>
 
-            <div class="flex">
-                <p>2021 – heute</p>
+            <div class="flex" >
+                <p style="width: 25%; margin-left: 50px">2021 – heute</p>
                 <p class="second">
                     <b>B-Factor GmbH</b><br>
                     Ausbildung als Fachinformatikerin Anwendungsentwicklung
                 </p>
             </div>
-            <h1 class="purple">Schuldbildung__________________________</h1>
+            <h1 class="purple">Schuldbildung________________________</h1>
             <div class="flex">
-                <p>2021 – heute</p>
+                <p style="width: 25%; margin-left: 50px">2021 – heute</p>
                 <p class="second">
                     <b> It.Schule Stuttgart</b><br>
                     Ausbildung als Fachinformatikerin Anwendungsentwicklung
                 </p>
             </div>
             <div class="flex">
-                <p>2019 – 2021</p>
+                <p style="width: 25%; margin-left: 50px">2019 – 2021</p>
                 <p class="second">
                     <b> Hochschule für Technik Stuttgart</b><br>
                     Studienrichtung Informatik
                 </p>
             </div>
             <div class="flex">
-                <p>2016 - 2018</p>
+                <p style="width: 25%; margin-left: 50px">2016 - 2018</p>
                 <p class="second">
                     <b> Kaufmännisches Schulzentrum Böblingen</b><br>
                     Berufskolleg 1 & 2 Wirtschaftsinformatik (Fachabitur)
                 </p>
             </div>
             <div class="flex">
-                <p>2013 - 2015</p>
+                <p style="width: 25%; margin-left: 50px">2013 - 2015</p>
                 <p class="second">
                     <b> Berufsschulzentrum Leonberg</b><br>
                     Berufliches Gymnasium
@@ -81,6 +105,45 @@
         </div>
         <!--Experince end-->
 
+        <!--tech stack start-->
+        <div data-scroll-index='1' style="background-color: #343232; border-radius: 20px; padding-left: 20px; padding-bottom: 30px; padding-top: 15px; margin-top: 50px">
+            <h1 class="color-text" style="text-align: center">Tech-Stack</h1>
+
+            <div>
+                <h1>Projekte</h1>
+                <div class="flex">
+                    <p style="width: 25%; margin-left: 50px">2024</p>
+                    <p class="second">
+                        <b> Portfolio Webseite</b><br>
+                        Zur Darstellung meiner beruflichen Qualifikationen und Persönlichkeit habe ich eine Portfolio Webseite gemacht mit HTML, CSS und Javascript.            </p>
+                </div>
+                <div class="flex">
+                    <p style="width: 25%; margin-left: 50px">2023</p>
+                    <p class="second">
+                        <b> DiscordReminderBot</b><br>
+                        Ein Projekt, wo ich die ersten Kontaktpunkte mit Python hatte und das Projekt als Übung genommen habe.
+                    </p>
+                </div>
+
+
+                    <div >
+                        <h1>Skills</h1>
+                        <p>
+                            Erfahren in PHP, HTML, SQL, Java, JS, CSS, TYPO3
+                            MS Office
+                        </p>
+                    </div>
+                    <div>
+                        <h1>Hobbys</h1>
+                        <p>
+                            Lesen, Serien schauen, Videogames spielen und Häckeln
+                        </p>
+                    </div>
+
+            </div>
+        </div>
+        <!--tech stack end-->
+        <script src="../script.js"></script>
     </main>
     <footer></footer>
 </body>

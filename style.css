@@ -1,29 +1,37 @@
+
+/*
+red: C20000
+purple: 5F00C2
+*/
+
 html{
     margin: 0;
     padding: 0;
 }
 body{
 
-   /* width: 900px;*/
+    position: relative;
+    color: white;
+    margin: auto;
+    width: 900px;
     background-color: #343232;
-
-
 }
 
 nav{
-    background-color: #df9696;
+    background-color: #6b6767;
     width: 150px;
     height: 20px;
     border-radius: 20px;
     padding: 15px 0 30px 15px;
     margin: 30px 0 50px 850px;
     position: relative;
+
 }
 
 aside{
-    background-color: #df9696;
+    background-color: #6b6767;
     width: 300px;
-    height: 450px;
+    /*height: 450px;*/
     border-radius: 20px;
     padding:50px 30px;
     top: 30px;
@@ -31,14 +39,15 @@ aside{
 }
 
 main{
-    background-color: #df9696;
+    background-color: #6b6767;
     width: 600px;
     height: auto;
     border-radius: 20px;
-    padding:50px 30px;
+    padding: 0 30px 50px 30px;
     margin-left: 30px ;
-    position: relative;
+    position: absolute;
     left: 400px;
+
 
 }
 
@@ -46,13 +55,16 @@ main{
     background-color: #323232;
     border-radius: 20px;
     padding: 20px 30px;
-    margin-top: 70px;
+    margin-top: 20px;
+    margin-left: 20px;
     color: white;
 }
 
 .grid-info{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 30px auto;
+    grid-template-rows: 10px 30px;
+    margin-top: 15px;
 }
 
 .grid{
@@ -67,6 +79,15 @@ main{
 .item1 {
     grid-row-start: 1;
     grid-row-end: 3;
+    padding-top: 8px;
+    padding-left: 2px;
+}
+
+.socialm{
+    /*background-color: blueviolet;*/
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 40px;
 }
 
 .flex{
@@ -83,4 +104,18 @@ main{
 .sticky {
     position: fixed;
 
+}
+
+.icon-back{
+    background-color: #c2c2c2;
+    border-radius: 5px;
+}
+
+.color-text {
+    transition: color 0.3s ease;
+    color: #C20000;
+}
+
+.scroll-image {
+    transition: opacity 0.3s ease;
 }
