@@ -8,6 +8,7 @@ html{
     margin: 0;
     padding: 0;
 }
+
 body{
 
     position: relative;
@@ -15,7 +16,14 @@ body{
     /*margin: auto;*/
     /*width: 700px;*/
     background-color: #363543;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: Poppins, serif;
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 nav{
@@ -26,7 +34,6 @@ nav{
     padding: 15px 0 30px 15px;
     margin: 30px 0 50px 60%;
     position: relative;
-
 }
 
 aside{
@@ -124,7 +131,7 @@ main{
 
 .color-text {
     transition: color 0.3s ease;
-    color: #C20000;
+    color: #FF352C;
 }
 
 .scroll-image {
@@ -137,4 +144,68 @@ main{
     row-gap: 20px;
     width: 400px;
     margin: auto;
+}
+/*------------------*/
+
+@media only screen and (max-width: 1840px) {
+
+    .item1 {
+
+        padding-top: 8px;
+        padding-left: 2px;
+    }
+
+    aside{
+        display: grid;
+        /*grid-template-columns: 100px auto;*/
+        /*grid-template-rows: 10px 30px;*/
+        background-color: #2d2d39;
+        width: 700px;
+        /*height: 450px;*/
+        border-radius: 20px;
+        padding: 10px 30px 20px 30px;
+        position: relative;
+        left: 0;
+        margin: auto auto 50px;
+
+
+    }
+
+    .personal{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .grid-info{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 10px 30px;
+        margin-top: 15px;
+        padding-right: 20px;
+
+    }
+
+    .info-box{
+        background-color: #25252e;
+        border-radius: 20px;
+        padding: 20px 30px;
+        margin-top: 20px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .sticky {
+        position: relative;
+
+    }
+
+    .socialm{
+        width: 200px;
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+
 }

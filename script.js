@@ -6,7 +6,7 @@ window.addEventListener('scroll', function() {
         if (scrollPosition > 200) {
             headerText.style.color = '#5F00C2'; // Neue Schriftfarbe beim Scrollen
         } else {
-            headerText.style.color = '#C20000'; // Ursprüngliche Schriftfarbe
+            headerText.style.color = '#FF352C'; // Ursprüngliche Schriftfarbe
         }
     });
 });
@@ -23,3 +23,5 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+
+
