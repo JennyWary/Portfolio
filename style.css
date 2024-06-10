@@ -114,9 +114,17 @@ main{
     padding: 10px 20px;
 }
 
+.date{
+    margin-top: -5px;
+    width: 200px;
+    color: #E94057;
+}
+
 .second{
     width: 600px;
-    padding-left: 20px;
+    margin-bottom: 50px;
+    margin-top: -5px;
+    /*padding-left: 20px;*/
 }
 
 .sticky {
@@ -131,7 +139,7 @@ main{
 
 .color-text {
     transition: color 0.3s ease;
-    color: #FF352C;
+    color: #E94057;
 }
 
 .scroll-image {
@@ -198,7 +206,7 @@ main{
     }
 
     .sticky {
-        position: sticky;
+        position: relative;
 
     }
 
@@ -216,11 +224,18 @@ main{
 @media screen and (min-width: 768px) {
     .timeline {
         display: grid;
-        grid-template-columns: 50px 100px 1fr;
+        grid-template-columns: 130px 20px 1fr;
     }
     .timeline-middle {
         position: relative;
         background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+        width: 3px;
+        height: 100%;
+    }
+
+    .timeline-middle-purple {
+        position: relative;
+        background-image: linear-gradient(45deg, #9d75cd, #7130bf, #6600ff);
         width: 3px;
         height: 100%;
     }
@@ -238,4 +253,42 @@ main{
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
+
+    .timeline-circle-purple {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-image: linear-gradient(45deg, #9d75cd, #7130bf, #6600ff);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+
+.line{
+    height: 3px;
+    width: 200px;
+    background-color: #6600ff;
+}
+
+/*---------------------*/
+
+.typewriter {
+    display: flex;
+    align-items: center;
+    font-size: 18PX;
+}
+
+.cursor {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: bold;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
