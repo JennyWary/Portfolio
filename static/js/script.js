@@ -20,11 +20,11 @@ window.addEventListener('scroll', function() {
 
     scrollImages.forEach(function(image, index) {
         if (scrollPosition > 900) {
-            image.src = `../imgs/image${index + 7}.png`;
+            image.src = `../static/imgs/image${index + 7}.png`;
         } else if (scrollPosition > 400){
-            image.src = `../imgs/image${index + 4}.png`;
+            image.src = `../static/imgs/image${index + 4}.png`;
         }else{
-            image.src = `../imgs/image${index + 1}.png`;
+            image.src = `../static/imgs/image${index + 1}.png`;
         }
     });
 });
