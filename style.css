@@ -28,7 +28,7 @@ body{
 
 nav{
     background-color: #2d2d39;
-    width: 150px;
+    width: 250px;
     height: 20px;
     border-radius: 20px;
     padding: 15px 0 30px 15px;
@@ -53,9 +53,9 @@ main{
     height: auto;
     border-radius: 20px;
     padding: 10px 30px 50px 30px;
-    margin: auto ;
+    margin: auto;
     position: relative;
-    /*left: 400px;*/
+
 
 
 }
@@ -89,7 +89,7 @@ main{
 
     display: grid;
     grid-template-columns: auto auto;
-    width: 900px;
+    width: 700px;
     margin: 50px auto;
 
 }
@@ -245,7 +245,7 @@ main{
     .timeline-circle {
         position: absolute;
         top: 0;
-        left: 50%;
+        left: -160%;
         width: 15px;
         height: 15px;
         border-radius: 50%;
@@ -257,7 +257,7 @@ main{
     .timeline-circle-purple {
         position: absolute;
         top: 0;
-        left: 50%;
+        left: -160%;
         width: 15px;
         height: 15px;
         border-radius: 50%;
@@ -291,4 +291,48 @@ main{
 @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
+}
+
+
+/*--------------------------------------*/
+
+
+.container {
+    overflow: hidden; /* Verhindert, dass der Text außerhalb des Containers sichtbar ist */
+    width: 100%; /* Die Breite des Containers */
+}
+
+.animatedText {
+    position: relative;
+    /*font-size: 24px; !* Schriftgröße, anpassbar *!*/
+    opacity: 0; /* Startet unsichtbar */
+    transition: opacity 2s, transform 2s; /* Übergang für Sichtbarkeit und Position */
+}
+
+.fromBottom{
+    transform: translateY(400%);
+    transition: transform 1s;
+}
+.fromRight {
+    transform: translateX(-50%); /* Starts off screen to the right */
+}
+
+.fromLeft {
+    transform: translateX(50%); /* Starts off screen to the left */
+}
+
+.animatedText.visible {
+    opacity: 1; /* Becomes visible */
+}
+
+.fromBottom.visible{
+    transform: translateY(0);
+}
+
+.fromRight.visible {
+    transform: translateX(0); /* Moves to center when visible */
+}
+
+.fromLeft.visible {
+    transform: translateX(0); /* Moves to center when visible */
 }
