@@ -10,21 +10,18 @@
 </head>
 <body>
 
-<!--<div id="container">-->
-<!--    <div class="animatedText fromRight">Dieser Text kommt von rechts herein!</div>-->
-<!--    <div class="animatedText fromLeft">Dieser Text kommt von links herein!</div>-->
-<!--    <div class="animatedText fromRight">Ein weiterer Text von rechts!</div>-->
-<!--    <div class="animatedText fromLeft">Noch ein Text von links!</div>-->
-<!--    &lt;!&ndash; Weitere Texte hier einfügen &ndash;&gt;-->
-<!--</div>-->
+
+
+
+
 <nav>
-    <a href="experince.html" >
+    <a href="#scroll1" >
         <img src="../imgs/exp-white.png" alt="exp-white" width="40" height="40">
     </a>
-    <a href="techStack.html" style="margin-left: 50px">
+    <a href="#scroll2" style="margin-left: 50px">
         <img src="../imgs/laptop-white.png" alt="laptop-white" width="40" height="40">
     </a>
-    <a href="personal.html" style="margin-left: 50px">
+    <a href="#scroll3" style="margin-left: 50px">
         <img src="../imgs/person-white.png" alt="laptop-white" width="40" height="40">
     </a>
 </nav>
@@ -76,8 +73,8 @@
     </aside>
 
 <!--Experince start-->
-    <main data-scroll-index='0' >
-        <div class="exp-box container">
+    <main>
+        <div id="scroll1" data-scroll-index='0' class="exp-box container">
 <!--            Berufserfahrung-->
             <h1 class="color-text" style="text-align: center; font-size: 40px;">Erfahrung</h1>
             <h1 class="purple">Berufserfahrung</h1>
@@ -94,6 +91,7 @@
                     </p>
                 </div>
             </div>
+
 <!--            Schulbildung-->
             <div style="margin-top: 100px; margin-bottom: 50px;">
                 <h1 class="purple">Schulbildung</h1>
@@ -146,10 +144,11 @@
         <!--Experince end-->
 
         <!--tech stack start-->
-        <div data-scroll-index='1' class="exp-box container">
+        <div id="scroll2" class="exp-box container">
             <h1 class="color-text" style="text-align: center; font-size: 40px;">Tech-Stack</h1>
             <h1>Projekte</h1>
             <div class="timeline">
+
                 <p class="date animatedText fromRight" style="color: #7130bf; margin-left: 60px;">2024</p>
                 <div class="timeline-middle-purple">
                     <div class="timeline-circle-purple  animatedText fromBottom"></div>
@@ -157,7 +156,20 @@
                 <div class=" timeline-component timeline-content">
                     <p class="second animatedText fromLeft" style="width: 500px;">
                         <b> Portfolio Webseite</b><br><br>
-                        Zur Darstellung meiner beruflichen Qualifikationen und Persönlichkeit habe ich eine Portfolio Webseite gemacht mit HTML, CSS und Javascript.
+                        Zur Darstellung meiner Fähigkeit habe ich eine Portfolio Webseite gemacht. <br>
+                        <b>Tools: </b> HTML, CSS, JavaScript
+                    </p>
+                </div>
+
+                <p class="date animatedText fromRight" style="color: #7130bf; margin-left: 60px;">2024</p>
+                <div class="timeline-middle-purple">
+                    <div class="timeline-circle-purple  animatedText fromBottom"></div>
+                </div>
+                <div class=" timeline-component timeline-content">
+                    <p class="second animatedText fromLeft" style="width: 500px;">
+                        <b> Start up Webseite</b><br><br>
+                        Für einen Freund habe ich eine Webseite für ihn gemacht. <br>
+                        <b>Tools: </b> HTML, CSS, JavaScript
                     </p>
                 </div>
 
@@ -168,7 +180,8 @@
                 <div class=" timeline-component timeline-content">
                     <p class="second animatedText fromLeft" style="width: 500px;">
                         <b> DiscordReminderBot</b><br><br>
-                        Ein Projekt, wo ich die ersten Kontaktpunkte mit Python hatte und das Projekt als Übung genommen habe.
+                        Ein Projekt, wo ich die ersten Kontaktpunkte mit Python hatte und das Projekt als Übung genommen habe. <br>
+                        <b>Tools: </b> Python
                     </p>
                 </div>
 
@@ -178,13 +191,14 @@
                 </div>
                 <div class=" timeline-component timeline-content">
                     <p class="second animatedText fromLeft" style="width: 500px;">
-                        <b> Blog Webseiten</b><br><br>
-                        Ein Projekt, wo ich die ersten Kontaktpunkte mit Python hatte und das Projekt als Übung genommen habe.
+                        <b> Blog Webseite</b><br><br>
+                        Eine klassische Blog-Website mit PHP und SQL, die Anmelde- und Kommentarfunktionen beinhaltet. <br>
+                        <b>Tools: </b> HTML, CSS, PHP, SQL
                     </p>
                 </div>
             </div>
-
-            <div style="margin-top: 40px;">
+<!--skills-->
+            <div style="margin-top: 100px; margin-bottom: 50px;">
                 <h1>Skills</h1>
                 <div class="grid-skills">
                     <img src="../imgs/php.png" alt="php" width="75" height="75">
@@ -200,19 +214,22 @@
         <!--            tech end-->
 
         <!--            Personal start -->
-        <div data-scroll-index='1' class="exp-box">
+        <div id="scroll3" class="exp-box">
             <h1 class="color-text" style="text-align: center">Personal-Info</h1>
             <h1>Sprache</h1>
-            <div style="margin: auto; text-align: center; width: 400px">
+            <div>
                 <p>Deutsch (Muttersprache)</p>
-                <p> Englisch (Fließend in Wort und Schrift)</p>
-                <p> Tamil (Fließend)</p>
             </div>
-                <div>
+            <div>
+                <p> Englisch (Fließend in Wort und Schrift)</p>
+            </div>
+                <p> Tamil (Fließend)</p>
+                <div style="margin-bottom: 50px; margin-top: 100px;">
                     <h1>Hobbys</h1>
-                    <p>
-                        Lesen, Serien schauen, Videogames spielen und Häckeln
-                    </p>
+                    <p>Lesen</p>
+                    <p>Serien schauen</p>
+                    <p>Videogames spielen  </p>
+                    <p>Häckeln</p>
                 </div>
         </div>
 
