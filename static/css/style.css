@@ -1,7 +1,15 @@
 
 /*
-red: C20000
-purple: 5F00C2
+Colors
+red: E94057
+purple: 7130bf
+Blue: #447df8
+
+Background
+grey: 363543
+
+Box-background
+darker-grey: 2d2d39
 */
 
 html{
@@ -13,8 +21,6 @@ body{
 
     position: relative;
     color: white;
-    /*margin: auto;*/
-    /*width: 700px;*/
     background-color: #363543;
     font-size: 16px;
     font-family: Poppins, serif;
@@ -36,15 +42,18 @@ nav{
     position: relative;
 }
 
+nav a img:hover{
+    -webkit-filter: drop-shadow(5px 5px 5px #E94057);
+    filter: drop-shadow(5px 5px 5px #E94057);
+}
+
 aside{
     background-color: #2d2d39;
     width: 300px;
-    /*height: 450px;*/
     border-radius: 20px;
-    padding:50px 30px;
+    padding:30px 30px;
     top: 30px;
-    left: 10%;
-
+    right: 70%;
 }
 
 main{
@@ -55,19 +64,15 @@ main{
     padding: 10px 30px 50px 30px;
     margin: auto;
     position: relative;
-
-
-
 }
 
 .info-box{
     background-color: #25252e;
     border-radius: 20px;
-    padding: 20px 30px;
+    padding: 40px 30px;
     margin-top: 20px;
-    margin-left: 20px;
-
 }
+
 
 .exp-box{
     background-color: #25252e;
@@ -82,16 +87,18 @@ main{
     display: grid;
     grid-template-columns: 30px auto;
     grid-template-rows: 10px 30px;
-    margin-top: 15px;
+    /*margin-top: 15px;*/
+}
+
+#plz{
+    margin-top: 30px;
 }
 
 .grid{
-
     display: grid;
     grid-template-columns: auto auto;
     width: 700px;
     margin: 50px auto;
-
 }
 
 .item1 {
@@ -102,7 +109,6 @@ main{
 }
 
 .socialm{
-    /*background-color: blueviolet;*/
     width: 200px;
     margin-top: 30px;
     margin-left: 40px;
@@ -124,7 +130,6 @@ main{
     width: 600px;
     margin-bottom: 50px;
     margin-top: -5px;
-    /*padding-left: 20px;*/
 }
 
 .sticky {
@@ -146,68 +151,104 @@ main{
     transition: opacity 0.3s ease;
 }
 
+.logo{
+    background-color: white;
+    border-radius: 20px;
+    width: 85px;
+    height: 85px;
+}
+
+.logo-nav{
+    width: 40px;
+    height: 40px;
+}
+
+.logo-social{
+    width: 30px;
+    height: 30px;
+}
+
 .grid-skills{
     display: grid;
     grid-template-columns: auto auto auto;
-    row-gap: 20px;
+    row-gap: 50px;
     width: 400px;
     margin: auto;
 }
+
+#name{
+    margin-left: 30px;
+}
+
+
 /*------------------*/
 
 @media only screen and (max-width: 1840px) {
 
-    .item1 {
-
-        padding-top: 8px;
-        padding-left: 2px;
-    }
-
     aside{
-        display: grid;
+        /*display: grid;*/
         /*grid-template-columns: 100px auto;*/
         /*grid-template-rows: 10px 30px;*/
         background-color: #2d2d39;
         width: 700px;
         /*height: 450px;*/
         border-radius: 20px;
-        padding: 10px 30px 20px 30px;
+        padding: 0 30px 20px 30px;
         position: relative;
         left: 0;
-        margin: auto auto 50px;
+        margin: 0 auto 50px;
 
 
     }
 
-    .personal{
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-
-    .grid-info{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: 10px 30px;
-        margin-top: 15px;
-        padding-right: 20px;
-
-    }
-
-    .info-box{
-        background-color: #25252e;
+    nav{
+        background-color: #2d2d39;
+        width: 250px;
+        height: 20px;
         border-radius: 20px;
-        padding: 20px 30px;
-        margin-top: 20px;
-        margin-left: 20px;
-        display: flex;
-        justify-content: center;
-
+        padding: 15px 0 30px 15px;
+        margin: 30px 0 50px 60%;
+        position: relative;
 
     }
+
+    /*nav{*/
+    /*    background-color: #2d2d39;*/
+    /*    width: 0px;*/
+    /*    height: 0px;*/
+    /*    border-radius: 20px;*/
+    /*    padding: 0;*/
+    /*    margin: 0;*/
+    /*    position: relative;*/
+    /*    opacity: 0;*/
+    /*}*/
+
+    /*.personal{*/
+    /*    grid-column-start: 1;*/
+    /*    grid-column-end: 3;*/
+    /*}*/
+
+    /*.grid-info{*/
+    /*    display: grid;*/
+    /*    grid-template-columns: auto auto;*/
+    /*    grid-template-rows: 10px 30px;*/
+    /*    margin-top: 15px;*/
+    /*    padding-right: 20px;*/
+
+    /*}*/
+
+    /*.info-box{*/
+    /*    background-color: #25252e;*/
+    /*    border-radius: 20px;*/
+    /*    padding: 20px 30px;*/
+    /*    margin-top: 20px;*/
+    /*    margin-left: 20px;*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*}*/
 
     .sticky {
         position: relative;
-
     }
 
     .socialm{
@@ -216,6 +257,14 @@ main{
         margin-left: 40px;
     }
 
+    #name{
+        padding-top: 20px;
+        padding-left: 30%;
+    }
+
+    #typewriter{
+        padding-left: 30%;
+    }
 }
 
 
@@ -245,7 +294,7 @@ main{
     .timeline-circle {
         position: absolute;
         top: 0;
-        left: -160%;
+        left: -190%;
         width: 15px;
         height: 15px;
         border-radius: 50%;
@@ -257,7 +306,7 @@ main{
     .timeline-circle-purple {
         position: absolute;
         top: 0;
-        left: -160%;
+        left: -190%;
         width: 15px;
         height: 15px;
         border-radius: 50%;
@@ -279,6 +328,7 @@ main{
     display: flex;
     align-items: center;
     font-size: 18PX;
+    margin-left: 60px;
 }
 
 .cursor {
@@ -335,4 +385,33 @@ main{
 
 .fromLeft.visible {
     transform: translateX(0); /* Moves to center when visible */
+}
+
+/*-----------------------*/
+
+.language {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.language p {
+    flex: 1;
+    margin: 0;
+}
+
+.bar-container {
+    flex: 3;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+.bar {
+    width: 0;
+    height: 10px;
+    background-color: #447df8;
+    border-radius: 5px;
+    transition: width 2s;
 }

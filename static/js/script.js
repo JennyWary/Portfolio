@@ -3,9 +3,9 @@ window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
 
     headerTexts.forEach(function(headerText) {
-        if (scrollPosition > 900) {
+        if (scrollPosition > 1900) {
             headerText.style.color = '#447df8'; // Neue Schriftfarbe beim Scrollen
-        }else if(scrollPosition > 400){
+        }else if(scrollPosition > 600){
             headerText.style.color = '#7130bf';// Neue Schriftfarbe beim Scrollen
         } else{
             headerText.style.color = '#E94057'; // Ursprüngliche Schriftfarbe
@@ -19,10 +19,10 @@ window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
 
     scrollImages.forEach(function(image, index) {
-        if (scrollPosition > 900) {
-            image.src = `../static/imgs/image${index + 7}.png`;
-        } else if (scrollPosition > 400){
-            image.src = `../static/imgs/image${index + 4}.png`;
+        if (scrollPosition > 1900) {
+            image.src = `../static/imgs/image${index + 5}.png`;
+        } else if (scrollPosition > 600){
+            image.src = `../static/imgs/image${index + 3}.png`;
         }else{
             image.src = `../static/imgs/image${index + 1}.png`;
         }
@@ -63,19 +63,6 @@ function deleteWord() {
 }
 
 type();
-
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     const textFromRight = document.querySelectorAll(".textFromRight");
-//     const textFromLeft = document.querySelectorAll(".textFromLeft");
-//     const textFromBottom = document.querySelectorAll(".textFromBottom");
-//
-//     textFromRight.style.animation = "slideInFromRight 2s forwards";
-//     textFromLeft.style.animation = "slideInFromLeft 2s forwards";
-//     textFromBottom.style.animation = "slideInFromBottom 2s forwards";
-// });
-
-
 // --------
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -99,4 +86,31 @@ document.addEventListener("DOMContentLoaded", () => {
     texts.forEach(text => {
         observer.observe(text);
     });
+});
+
+// --------
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function animateBars() {
+        var bars = document.querySelectorAll('.bar');
+        for (var i = 0; i < bars.length; i++) {
+            if (isElementInViewport(bars[i])) {
+                bars[i].style.width = bars[i].getAttribute('data-percent');
+            }
+        }
+    }
+
+    window.addEventListener('scroll', animateBars);
+    animateBars();  // Initial check in case bars are already in view on load
 });

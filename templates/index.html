@@ -9,36 +9,30 @@
     <title>Jennifer Bramadas</title>
 </head>
 <body>
-
-
-
-
-
-<nav>
-    <a href="#scroll1" >
-        <img src="../static/imgs/exp-white.png" alt="exp-white" width="40" height="40">
-    </a>
-    <a href="#scroll2" style="margin-left: 50px">
-        <img src="../static/imgs/laptop-white.png" alt="laptop-white" width="40" height="40">
-    </a>
-    <a href="#scroll3" style="margin-left: 50px">
-        <img src="../static/imgs/person-white.png" alt="laptop-white" width="40" height="40">
-    </a>
-</nav>
-
-    <aside class="item1 sticky">
-        <h1 class="color-text" style="margin-left: 60px;" >Jennifer Bramadas</h1>
-        <div class="typewriter" style="margin-left: 60px;">
+    <nav>
+        <a href="#scroll1" >
+            <img src="../static/imgs/exp-white.png" alt="exp-white" class="logo-nav">
+        </a>
+        <a href="#scroll2" style="margin-left: 50px;">
+            <img src="../static/imgs/laptop-white.png" alt="laptop-white" class="logo-nav">
+        </a>
+        <a href="#scroll3" style="margin-left: 50px">
+            <img src="../static/imgs/person-white.png" alt="laptop-white" class="logo-nav">
+        </a>
+    </nav>
+    <aside class=" sticky">
+        <h1 class="color-text" id="name">Jennifer Bramadas</h1>
+        <div class="typewriter" id="typewriter">
             <span id="text"></span>
             <span class="cursor">|</span>
         </div>
         <!--social icons-->
         <div class="socialm">
             <a href="https://www.linkedin.com/in/jennifer-b-0a6566157/" style="margin-left: 50px">
-                <img src="../static/imgs/linkedin.png" alt="Linkedin" width="30" height="30">
+                <img src="../static/imgs/linkedin.png" alt="Linkedin" class="logo-social">
             </a>
             <a href="https://github.com/JennyWary" style="margin-left: 50px">
-                <img src="../static/imgs/github.png" alt="GitHub" width="30" height="30">
+                <img src="../static/imgs/github.png" alt="GitHub" class="logo-social">
             </a>
         </div>
         <!--social icons-->
@@ -47,23 +41,17 @@
         <div class="info-box personal">
             <div class="grid-info">
                 <div class="item1 icon-back">
-                    <img class="scroll-image" style="margin-bottom: 30px;" src="../static/imgs/image1.png" alt="mobile-white" width="25" height="25">
-                </div>
-                <div style="font-size: 10px; padding-left: 10px" >Handynummer</div>
-                <div style="padding-left: 10px; padding-top: 10px">+4917630196670</div>
-            </div>
-
-            <div class="grid-info">
-                <div class="item1 icon-back">
-                    <img class="scroll-image" style="margin-bottom: 30px; margin-left: 2px" src="../static/imgs/image2.png" alt="umschlag red" width="20" height="20">
+                    <img class="scroll-image" style="margin-bottom: 30px; margin-left: 2px" src="../static/imgs/image1.png" alt="umschlag red" width="20" height="20">
                 </div>
                 <div style="font-size: 10px; padding-left: 10px" >Email</div>
-                <div style="padding-left: 10px; padding-top: 10px">j.bramadas@outlook.de</div>
+                <div style="padding-left: 10px; padding-top: 10px">
+                    <a style="text-decoration: none; color: white;" href="mailto:j.bramadas@outlook.de">j.bramadas@outlook.de</a>
+                </div>
             </div>
 
-            <div class="grid-info">
+            <div class="grid-info" id="plz">
                 <div class="item1 icon-back">
-                    <img class="scroll-image" style="margin-bottom: 30px; margin-left: 2px" src="../static/imgs/image3.png" alt="mobile-white" width="20" height="20">
+                    <img class="scroll-image" style="margin-bottom: 30px; margin-left: 2px" src="../static/imgs/image2.png" alt="mobile-white" width="20" height="20">
                 </div>
                 <div style="font-size: 10px; padding-left: 10px" >Ort</div>
                 <div style="padding-left: 10px; padding-top: 10px">Leonberg 71229</div>
@@ -74,6 +62,7 @@
 
 <!--Experince start-->
     <main>
+
         <div id="scroll1" data-scroll-index='0' class="exp-box container">
 <!--            Berufserfahrung-->
             <h1 class="color-text" style="text-align: center; font-size: 40px;">Erfahrung</h1>
@@ -201,12 +190,12 @@
             <div style="margin-top: 100px; margin-bottom: 50px;">
                 <h1>Skills</h1>
                 <div class="grid-skills">
-                    <img src="../static/imgs/php.png" alt="php" width="75" height="75">
-                    <img style="background-color: white; border-radius: 50px" src="../static/imgs/sql-server.png" alt="sql" width="75" height="75">
-                    <img src="../static/imgs/html-5.png" alt="html" width="75" height="75">
-                    <img src="../static/imgs/css.png" alt="css" width="75" height="75">
-                    <img style="background-color: white; border-radius: 50px" src="../static/imgs/java.png" alt="java" width="75" height="75">
-                    <img style="background-color: white; border-radius: 50px" src="../static/imgs/typo.png" alt="java" width="75" height="75">
+                    <img src="../static/imgs/php.png" alt="php" class="logo">
+                    <img  src="../static/imgs/sql-server.png" alt="sql" class="logo">
+                    <img src="../static/imgs/html-5.png" alt="html" class="logo">
+                    <img src="../static/imgs/css.png" alt="css" class="logo">
+                    <img src="../static/imgs/java.png" alt="java" class="logo">
+                    <img src="../static/imgs/typo.png" alt="java" class="logo">
                 </div>
             </div>
 
@@ -215,15 +204,27 @@
 
         <!--            Personal start -->
         <div id="scroll3" class="exp-box">
-            <h1 class="color-text" style="text-align: center">Personal-Info</h1>
+            <h1 class="color-text" style="text-align: center; font-size: 40px;">Tech-Stack</h1>
             <h1>Sprache</h1>
-            <div>
-                <p>Deutsch (Muttersprache)</p>
+            <div class="language">
+                <p>Deutsch</p>
+                <div class="bar-container">
+                    <div class="bar" data-percent="85%"></div>
+                </div>
             </div>
-            <div>
-                <p> Englisch (Fließend in Wort und Schrift)</p>
+            <div class="language">
+                <p>Englisch</p>
+                <div class="bar-container">
+                    <div class="bar" data-percent="70%"></div>
+                </div>
             </div>
-                <p> Tamil (Fließend)</p>
+            <div class="language">
+                <p>Tamil</p>
+                <div class="bar-container">
+                    <div class="bar" data-percent="60%"></div>
+                </div>
+            </div>
+
                 <div style="margin-bottom: 50px; margin-top: 100px;">
                     <h1>Hobbys</h1>
                     <p>Lesen</p>
