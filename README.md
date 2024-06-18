@@ -40,3 +40,7 @@ systemctl stop portfolio_website
 # Ausschalten von nignx
 systemctl stop nginx
 ```
+
+## ✨ Tracking
+
+Die Metadaten zu eingehenden Anfragen liegen im Ordner `data` im Projektordner.
