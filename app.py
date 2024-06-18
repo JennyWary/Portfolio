@@ -15,7 +15,10 @@ if not os.path.exists("/var/www/portfolio_website/data/"):
 @app.route("/")
 def index():
     # Track traffic
-    track_request(request=request, data_save_path="/var/www/portfolio_website/data/tracking.jsonl")
+    try:
+        track_request(request=request, data_save_path="/var/www/portfolio_website/data/tracking.jsonl")
+    except:
+        pass
 
     # Return site
     return render_template("index.html")
