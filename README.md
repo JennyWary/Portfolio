@@ -15,6 +15,19 @@ https://jennifer-bramadas.de/
 
 Die Webseite läuft mit **Flask** als Backend, **gunicorn** als Web Server Gateway Interface und **nginx** als Webserver.
 
+## ✨ Hinweise für das Aufsetzen
+
+> Dieser Absatz ist nur für das erstmalige Aufsetzen des Servers relevant.
+
+Der User der den gunicorn-Service ausführt muss Zugriff auf den in diesem Projektordner erstellten Ordner `data` und das darin erstellte File `tracking.jsonl` erhalten sonst bekommt man Fehlermeldungen. Hierfür am besten vor dem Erstmaligen Aufsetzen des Servers folgende Commands ausführen.
+
+```bash
+mkdir <project_path>/data
+touch <project_path>/data/tracking.jsonl
+chown <user> <project_path>/data
+chown <user> <project_path>/data/tracking.jsonl
+```
+
 
 ## ✨ Projektfile updaten
 
