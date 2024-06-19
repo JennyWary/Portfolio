@@ -1,35 +1,53 @@
 window.addEventListener('scroll', function() {
+    const windowHeight = window.innerHeight - 700
     var headerTexts = document.querySelectorAll('.color-text');
     var scrollPosition = window.scrollY;
 
     headerTexts.forEach(function(headerText) {
-        if (scrollPosition > 1900) {
+        if (scrollPosition > 2800) {
             headerText.style.color = '#447df8'; // Neue Schriftfarbe beim Scrollen
-        }else if(scrollPosition > 600){
-            headerText.style.color = '#7130bf';// Neue Schriftfarbe beim Scrollen
-        } else{
+        }else if(scrollPosition > 1800){
+            headerText.style.color = '#8A2BE2';// Neue Schriftfarbe beim Scrollen
+        } else if(scrollPosition > windowHeight){
             headerText.style.color = '#E94057'; // Ursprüngliche Schriftfarbe
+        }else{
+            headerText.style.color = '#e9b340'; // Ursprüngliche Schriftfarbe
 
         }
     });
 });
+
+
 
 window.addEventListener('scroll', function() {
-    var scrollImages = document.querySelectorAll('.scroll-image');
+    const windowHeight = window.innerHeight - 700
+    var logos = document.querySelectorAll('.logo-nav');
     var scrollPosition = window.scrollY;
 
-    scrollImages.forEach(function(image, index) {
-        if (scrollPosition > 1900) {
-            image.src = `../static/imgs/image${index + 5}.png`;
-        } else if (scrollPosition > 600){
-            image.src = `../static/imgs/image${index + 3}.png`;
-        }else{
-            image.src = `../static/imgs/image${index + 1}.png`;
-        }
+    var shadowColor;
+    if (scrollPosition > 2800) {
+        shadowColor = '#447df8';
+    } else if (scrollPosition > 1800) {
+        shadowColor = '#8A2BE2';
+    } else if (scrollPosition > windowHeight) {
+        shadowColor = '#E94057';
+    }else {
+        shadowColor = '#e9b340';
+
+    }
+
+    logos.forEach(function(logo) {
+        logo.addEventListener('mouseover', function() {
+            logo.style.filter = `drop-shadow(5px 5px 5px ${shadowColor})`;
+        });
+
+        logo.addEventListener('mouseout', function() {
+            logo.style.filter = 'none';
+        });
     });
 });
 
-// ----------------------------------------
+// ----------------Tippen------------------------
 
 
 
@@ -114,3 +132,27 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', animateBars);
     animateBars();  // Initial check in case bars are already in view on load
 });
+// --------------
+function updateWidthInStyle() {
+    const windowHeight = window.innerHeight
+    const windowWidth = window.innerWidth;
+    const myElement = document.getElementById('image');
+    // const myAside = document.getElementById('aside');
+    const myImage = document.getElementById('image-container');
+
+
+    // Anwenden der Fensterbreite auf das Element
+    myElement.style.height = `${windowHeight}px`;
+    myElement.style.width = `${windowWidth}px`;
+
+    // myAside.style.height = `${windowHeight}px`;
+    //
+    // myImage.style.width = `${windowWidth}px`;
+    myImage.style.height = `${windowHeight}px`;
+}
+
+// Initialer Aufruf
+updateWidthInStyle();
+
+// Aktualisieren bei Größenänderung des Fensters
+window.addEventListener('resize', updateWidthInStyle);

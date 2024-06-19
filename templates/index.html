@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../static/css/style.css">
@@ -9,7 +9,11 @@
     <title>Jennifer Bramadas</title>
 </head>
 <body>
-    <nav>
+<nav class="scroll-image" >
+    <div class="color-text nav-name">
+        <b>JB</b>
+    </div>
+    <div  style="margin-right: 50px;">
         <a href="#scroll1" >
             <img src="../static/imgs/exp-white.png" alt="exp-white" class="logo-nav">
         </a>
@@ -19,110 +23,84 @@
         <a href="#scroll3" style="margin-left: 50px">
             <img src="../static/imgs/person-white.png" alt="laptop-white" class="logo-nav">
         </a>
-    </nav>
-    <aside class=" sticky">
-        <h1 class="color-text" id="name">Jennifer Bramadas</h1>
+    </div>
+</nav>
+
+<div id="image-container">
+    <img id="image" src="../static/imgs/laptop.jpg" alt="laptop">
+    <div id="image-text">
+        Hallo, Ich heiße <br>
+        <div id="image-name">
+            <b>Jennifer Bramadas. </b>
+        </div>
         <div class="typewriter" id="typewriter">
             <span id="text"></span>
             <span class="cursor">|</span>
         </div>
-        <!--social icons-->
-        <div class="socialm">
-            <a href="https://www.linkedin.com/in/jennifer-b-0a6566157/" style="margin-left: 50px">
-                <img src="../static/imgs/linkedin.png" alt="Linkedin" class="logo-social">
-            </a>
-            <a href="https://github.com/JennyWary" style="margin-left: 50px">
-                <img src="../static/imgs/github.png" alt="GitHub" class="logo-social">
-            </a>
-        </div>
-        <!--social icons-->
+    </div>
+</div>
 
-        <!--personal information-->
-        <div class="info-box personal">
-            <div class="grid-info">
-                <div class="item1 icon-back">
-                    <img class="scroll-image" style="margin-bottom: 30px; margin-left: 2px" src="../static/imgs/image1.png" alt="umschlag red" width="20" height="20">
-                </div>
-                <div style="font-size: 10px; padding-left: 10px" >Email</div>
-                <div style="padding-left: 10px; padding-top: 10px">
-                    <a style="text-decoration: none; color: white;" href="mailto:j.bramadas@outlook.de">j.bramadas@outlook.de</a>
-                </div>
-            </div>
-
-            <div class="grid-info" id="plz">
-                <div class="item1 icon-back">
-                    <img class="scroll-image" style="margin-bottom: 30px; margin-left: 2px" src="../static/imgs/image2.png" alt="mobile-white" width="20" height="20">
-                </div>
-                <div style="font-size: 10px; padding-left: 10px" >Ort</div>
-                <div style="padding-left: 10px; padding-top: 10px">Leonberg 71229</div>
-            </div>
-        </div>
-        <!--personal information end-->
-    </aside>
-
-<!--Experince start-->
-    <main>
-
-        <div id="scroll1" data-scroll-index='0' class="exp-box container">
-<!--            Berufserfahrung-->
-            <h1 class="color-text" style="text-align: center; font-size: 40px;">Erfahrung</h1>
-            <h1 class="purple">Berufserfahrung</h1>
-
+<main id="scroll1">
+    <div class="container">
+        <!--            Berufserfahrung-->
+        <h1 class="color-text title">Erfahrung</h1>
+        <h1>Berufserfahrung</h1>
+        <div>
             <div class="timeline">
-                <p class="date animatedText fromRight">2021 – heute</p>
+                <p class="date animatedText fromRight red">2021 – heute</p>
                 <div class="timeline-middle">
                     <div class="timeline-circle animatedText fromBottom"></div>
                 </div>
                 <div class=" timeline-component timeline-content">
-                    <p class="second animatedText fromLeft" style="width: 500px;">
+                    <p class="timeline-text animatedText fromLeft">
                         <b> It.Schule Stuttgart </b><br>
                         Ausbildung als Fachinformatikerin Anwendungsentwicklung
                     </p>
                 </div>
             </div>
 
-<!--            Schulbildung-->
-            <div style="margin-top: 100px; margin-bottom: 50px;">
-                <h1 class="purple">Schulbildung</h1>
+            <!--            Schulbildung-->
+            <div class="box">
+                <h1>Schulbildung</h1>
                 <div class="timeline">
-                    <p class="date animatedText fromRight">2021 – heute</p>
+                    <p class="date animatedText fromRight red">2021 – heute</p>
                     <div class="timeline-middle">
                         <div class="timeline-circle animatedText fromBottom"></div>
                     </div>
                     <div class=" timeline-component timeline-content">
-                        <p class="second animatedText fromLeft" style="width: 500px;">
+                        <p class="timeline-text animatedText fromLeft">
                             <b> It.Schule Stuttgart</b><br>
                             Ausbildung als Fachinformatikerin Anwendungsentwicklung
                         </p>
                     </div>
-                    <p class="date animatedText fromRight">2019 – 2021</p>
+                    <p class="date animatedText fromRight red">2019 – 2021</p>
                     <div class="timeline-middle">
                         <div class="timeline-circle animatedText fromBottom"></div>
                     </div>
                     <div class=" timeline-component timeline-content">
 
-                        <p class="second animatedText fromLeft" style="width: 500px;">
+                        <p class="timeline-text animatedText fromLeft">
                             <b> Hochschule für Technik Stuttgart</b><br>
                             Studienrichtung Informatik
                         </p>
                     </div>
-                    <p class="date animatedText fromRight">2016 - 2018</p>
+                    <p class="date animatedText fromRight red">2016 - 2018</p>
                     <div class="timeline-middle">
                         <div class="timeline-circle animatedText fromBottom"></div>
                     </div>
                     <div class=" timeline-component timeline-content">
 
-                        <p class="second animatedText fromLeft" style="width: 500px;">
+                        <p class="timeline-text animatedText fromLeft">
                             <b> Kaufmännisches Schulzentrum Böblingen</b><br>
                             Berufskolleg 1 & 2 Wirtschaftsinformatik (Fachabitur)
                         </p>
                     </div>
-                    <p class="date animatedText fromRight" >2013 - 2015</p>
+                    <p class="date animatedText fromRight red" >2013 - 2015</p>
                     <div class="timeline-middle">
                         <div class="timeline-circle animatedText fromBottom"></div>
                     </div>
                     <div class=" timeline-component timeline-content">
-                        <p class="second animatedText fromLeft" style="width: 500px;">
+                        <p class="timeline-text animatedText fromLeft">
                             <b> Berufsschulzentrum Leonberg</b><br>
                             Berufliches Gymnasium
                         </p>
@@ -130,113 +108,151 @@
                 </div>
             </div>
         </div>
-        <!--Experince end-->
+    </div>
+    <!--Experince end-->
 
-        <!--tech stack start-->
-        <div id="scroll2" class="exp-box container">
-            <h1 class="color-text" style="text-align: center; font-size: 40px;">Tech-Stack</h1>
-            <h1>Projekte</h1>
-            <div class="timeline">
+    <!--tech stack start-->
+    <div id="scroll2" class="container">
+        <h1 class="color-text title">Tech-Stack</h1>
+        <h1>Projekte</h1>
 
-                <p class="date animatedText fromRight" style="color: #7130bf; margin-left: 60px;">2024</p>
-                <div class="timeline-middle-purple">
-                    <div class="timeline-circle-purple  animatedText fromBottom"></div>
-                </div>
-                <div class=" timeline-component timeline-content">
-                    <p class="second animatedText fromLeft" style="width: 500px;">
-                        <b> Portfolio Webseite</b><br><br>
-                        Zur Darstellung meiner Fähigkeit habe ich eine Portfolio Webseite gemacht. <br>
-                        <b>Tools: </b> HTML, CSS, JavaScript
-                    </p>
-                </div>
-
-                <p class="date animatedText fromRight" style="color: #7130bf; margin-left: 60px;">2024</p>
-                <div class="timeline-middle-purple">
-                    <div class="timeline-circle-purple  animatedText fromBottom"></div>
-                </div>
-                <div class=" timeline-component timeline-content">
-                    <p class="second animatedText fromLeft" style="width: 500px;">
-                        <b> Start up Webseite</b><br><br>
-                        Für einen Freund habe ich eine Webseite für seinen Start-up erstellt. <br>
-                        <b>Tools: </b> HTML, CSS, JavaScript
-                    </p>
-                </div>
-
-                <p class="date animatedText fromRight" style="color: #7130bf; margin-left: 60px;">2023</p>
-                <div class="timeline-middle-purple">
-                    <div class="timeline-circle-purple animatedText fromBottom"></div>
-                </div>
-                <div class=" timeline-component timeline-content">
-                    <p class="second animatedText fromLeft" style="width: 500px;">
-                        <b> DiscordReminderBot</b><br><br>
-                        Ein Projekt, wo ich die ersten Kontaktpunkte mit Python hatte und es als Übung genommen habe. <br>
-                        <b>Tools: </b> Python
-                    </p>
-                </div>
-
-                <p class="date animatedText fromRight" style="color: #7130bf; margin-left: 60px;">2021</p>
-                <div class="timeline-middle-purple">
-                    <div class="timeline-circle-purple animatedText fromBottom"></div>
-                </div>
-                <div class=" timeline-component timeline-content">
-                    <p class="second animatedText fromLeft" style="width: 500px;">
-                        <b> Blog Webseite</b><br><br>
-                        Eine klassische Blog-Website mit PHP und SQL, die Anmelde- und Kommentarfunktionen beinhaltet. <br>
-                        <b>Tools: </b> HTML, CSS, PHP, SQL
-                    </p>
-                </div>
+        <div class="timeline" >
+            <p class="date animatedText fromRight purple" style="margin-left: 60px;">2024</p>
+            <div class="timeline-middle-purple">
+                <div class="timeline-circle-purple  animatedText fromBottom"></div>
             </div>
-<!--skills-->
-            <div style="margin-top: 100px; margin-bottom: 50px;">
-                <h1>Skills</h1>
-                <div class="grid-skills">
-                    <img src="../static/imgs/php.png" alt="php" class="logo">
-                    <img  src="../static/imgs/sql-server.png" alt="sql" class="logo">
-                    <img src="../static/imgs/html-5.png" alt="html" class="logo">
-                    <img src="../static/imgs/css.png" alt="css" class="logo">
-                    <img src="../static/imgs/java.png" alt="java" class="logo">
-                    <img src="../static/imgs/typo.png" alt="java" class="logo">
-                </div>
+            <div class=" timeline-component timeline-content">
+                <p class="timeline-text animatedText fromLeft" >
+                    <b> CV Webseite</b><br><br>
+                    Design und Entwicklung einer CV Webseite <br><br>
+                    <b>Tools: </b> HTML, CSS, JavaScript
+                </p>
             </div>
 
+            <p class="date animatedText fromRight purple" style="margin-left: 60px;">2024</p>
+            <div class="timeline-middle-purple">
+                <div class="timeline-circle-purple  animatedText fromBottom"></div>
+            </div>
+            <div class=" timeline-component timeline-content">
+                <p class="timeline-text animatedText fromLeft">
+                    <b> Start up Webseite</b><br><br>
+                    Design und Entwicklung einer Start up Webseite <br><br>
+                    <b>Tools: </b> HTML, CSS, JavaScript
+                </p>
+            </div>
+
+            <p class="date animatedText fromRight purple" style="margin-left: 60px;">2023</p>
+            <div class="timeline-middle-purple">
+                <div class="timeline-circle-purple animatedText fromBottom"></div>
+            </div>
+            <div class=" timeline-component timeline-content">
+                <p class="timeline-text animatedText fromLeft">
+                    <b> DiscordReminderBot</b><br><br>
+                    Entwicklung eines Programmes, welches den ausgewählten User nach einer bestimmten Zeit an was erinnert. <br><br>
+                    <b>Tools: </b> Python
+                </p>
+            </div>
+
+            <p class="date animatedText fromRight purple" style="margin-left: 60px;">2021</p>
+            <div class="timeline-middle-purple">
+                <div class="timeline-circle-purple animatedText fromBottom"></div>
+            </div>
+            <div class=" timeline-component timeline-content">
+                <p class="timeline-text animatedText fromLeft">
+                    <b> Blog Webseite</b><br><br>
+                    Design und Entwicklung eine klassische Blog-Website mit PHP und SQL, die Anmelde- und Kommentarfunktionen beinhaltet. <br><br>
+                    <b>Tools: </b> HTML, CSS, PHP, SQL
+                </p>
+            </div>
         </div>
-        <!--            tech end-->
-
-        <!--            Personal start -->
-        <div id="scroll3" class="exp-box">
-            <h1 class="color-text" style="text-align: center; font-size: 40px;">Tech-Stack</h1>
-            <h1>Sprache</h1>
-            <div class="language">
-                <p>Deutsch</p>
-                <div class="bar-container">
-                    <div class="bar" data-percent="85%"></div>
-                </div>
+        <!--skills-->
+        <div class="box">
+            <h1>Skills</h1>
+            <div class="grid-skills">
+                <img src="../static/imgs/php.png" alt="php" class="logo animatedText">
+                <img src="../static/imgs/sql-server.png" alt="sql" class="logo animatedText">
+                <img src="../static/imgs/html-5.png" alt="html" class="logo animatedText">
+                <img src="../static/imgs/css.png" alt="css" class="logo animatedText">
+                <img src="../static/imgs/java.png" alt="java" class="logo animatedText">
+                <img src="../static/imgs/typo.png" alt="java" class="logo animatedText">
             </div>
-            <div class="language">
-                <p>Englisch</p>
-                <div class="bar-container">
-                    <div class="bar" data-percent="70%"></div>
-                </div>
-            </div>
-            <div class="language">
-                <p>Tamil</p>
-                <div class="bar-container">
-                    <div class="bar" data-percent="60%"></div>
-                </div>
-            </div>
-
-                <div style="margin-bottom: 50px; margin-top: 100px;">
-                    <h1>Hobbys</h1>
-                    <p>Lesen</p>
-                    <p>Serien schauen</p>
-                    <p>Videogames spielen  </p>
-                    <p>Häckeln</p>
-                </div>
         </div>
 
-        <!--personal end-->
-        <script src="../static/js/script.js"></script>
-    </main>
-    <footer></footer>
+    </div>
+    <!--            tech end-->
+
+    <!--            Personal start -->
+    <div id="scroll3" class="container">
+        <h1 class="color-text title" >Personal-Info</h1>
+        <h1>Sprache</h1>
+        <div class="language">
+            <p>Deutsch</p>
+            <div class="bar-container">
+                <div class="bar" data-percent="85%"></div>
+            </div>
+        </div>
+        <div class="language">
+            <p>Englisch</p>
+            <div class="bar-container">
+                <div class="bar" data-percent="70%"></div>
+            </div>
+        </div>
+        <div class="language">
+            <p>Tamil</p>
+            <div class="bar-container">
+                <div class="bar" data-percent="60%"></div>
+            </div>
+        </div>
+
+        <!--            Hobbys-->
+        <div class="box" >
+            <h1 >Hobbys</h1>
+            <p class="fromBottom animatedText">Lesen</p>
+            <p class="fromBottom animatedText">Serien schauen</p>
+            <p class="fromBottom animatedText">Videogames spielen  </p>
+            <p class="fromBottom animatedText">Häckeln</p>
+        </div>
+    </div>
+    <!--personal end-->
+</main>
+<footer>
+        <!--personal information-->
+        <div class="info-box">
+            <div>
+                <div class="grid-info">
+                    <div class="item icon-box">
+                        <img class="as-image" src="../static/imgs/image1.png" alt="umschlag red">
+                    </div>
+                    <div >Email</div>
+                    <div>
+                        <a style="text-decoration: none; color: white;" href="mailto:j.bramadas@outlook.de">j.bramadas@outlook.de</a>
+                    </div>
+                </div>
+
+                <div class="grid-info" id="plz">
+                    <div class="item icon-box">
+                        <img class="as-image" src="../static/imgs/image2.png" alt="mobile-white">
+                    </div>
+                    <div>Ort</div>
+                    <div>Leonberg 71229</div>
+                </div>
+            </div>
+
+            <!--personal information end-->
+
+
+            <!--social icons start-->
+            <div class="socialm">
+                <a href="https://www.linkedin.com/in/jennifer-b-0a6566157/" >
+                    <img src="../static/imgs/linkedin.png" alt="Linkedin" class="logo-social">
+                </a>
+                <a href="https://github.com/JennyWary" >
+                    <img src="../static/imgs/github.png" alt="GitHub" class="logo-social">
+                </a>
+            </div>
+        </div>
+        <!--social icons end-->
+</footer>
+<script src="../static/js/script.js"></script>
 </body>
 </html>
