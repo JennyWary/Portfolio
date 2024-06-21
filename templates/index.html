@@ -1,27 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html >
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../static/imgs/exp-white.png">
+
     <title>Jennifer Bramadas</title>
 </head>
 <body>
-<nav class="scroll-image" >
+<nav class="scroll-image" id="nav" >
     <div class="color-text nav-name">
         <b>JB</b>
     </div>
-    <div  style="margin-right: 50px;">
-        <a href="#scroll1" >
-            <img src="../static/imgs/exp-white.png" alt="exp-white" class="logo-nav">
+    <div style="margin-right: 50px;">
+        <a href="#scroll1">
+            <img id="exp-img" src="../static/imgs/exp-white.png" alt="Erfahrung" class="logo-nav">
         </a>
         <a href="#scroll2" style="margin-left: 50px;">
-            <img src="../static/imgs/laptop-white.png" alt="laptop-white" class="logo-nav">
+            <img id="laptop-img" src="../static/imgs/laptop-white.png" alt="Projekte" class="logo-nav">
         </a>
         <a href="#scroll3" style="margin-left: 50px">
-            <img src="../static/imgs/person-white.png" alt="laptop-white" class="logo-nav">
+            <img id="person-img" src="../static/imgs/person-white.png" alt="Personal" class="logo-nav">
         </a>
     </div>
 </nav>
@@ -29,9 +31,9 @@
 <div id="image-container">
     <img id="image" src="../static/imgs/laptop.jpg" alt="laptop">
     <div id="image-text">
-        Hallo, Ich heiße <br>
+        Hallo, Ich bin <br>
         <div id="image-name">
-            <b>Jennifer Bramadas. </b>
+            <b>Jennifer Bramadas</b>
         </div>
         <div class="typewriter" id="typewriter">
             <span id="text"></span>
@@ -43,138 +45,166 @@
 <main id="scroll1">
     <div class="container">
         <!--            Berufserfahrung-->
-        <h1 class="color-text title">Erfahrung</h1>
         <h1>Berufserfahrung</h1>
-        <div>
+<!--        <div>-->
             <div class="timeline">
                 <p class="date animatedText fromRight red">2021 – heute</p>
                 <div class="timeline-middle">
-                    <div class="timeline-circle animatedText fromBottom"></div>
+                    <div class=" timeline-circle animatedText fromBottom"></div>
                 </div>
-                <div class=" timeline-component timeline-content">
-                    <p class="timeline-text animatedText fromLeft">
-                        <b> It.Schule Stuttgart </b><br>
-                        Ausbildung als Fachinformatikerin Anwendungsentwicklung
-                    </p>
+                <div>
+                    <div class="animatedText animate fromBottom title" >
+                        <b>B-FACTOR GmbH</b>
+                    </div>
+                    <ul>
+                        <li class="animate width animatedText fromBottom">Ausbildung zur Fachinformatikerin für Anwendungsentwicklung</li>
+                        <li class="animate width animatedText fromBottom">Aufbau tiefgreifender Kenntnisse und praktischer Erfahrung in der Webentwicklung</li>
+                        <li class="animate width animatedText fromBottom">Anwendung verschiedener Technologien, darunter HTML, CSS, Javascript, PHP und TYPO3</li>
+                    </ul>
+
                 </div>
             </div>
 
             <!--            Schulbildung-->
             <div class="box">
-                <h1>Schulbildung</h1>
+                <h1>Ausbildung</h1>
                 <div class="timeline">
                     <p class="date animatedText fromRight red">2021 – heute</p>
                     <div class="timeline-middle">
                         <div class="timeline-circle animatedText fromBottom"></div>
                     </div>
-                    <div class=" timeline-component timeline-content">
-                        <p class="timeline-text animatedText fromLeft">
-                            <b> It.Schule Stuttgart</b><br>
-                            Ausbildung als Fachinformatikerin Anwendungsentwicklung
+                    <div class=" timeline-component timeline-content" style="margin-bottom: 50px;">
+                        <p class="animate animatedText fromBottom title">
+                            <b> It.Schule Stuttgart</b>
                         </p>
+                        <ul>
+                            <li class="animate width animatedText fromBottom">Ausbildung zur Fachinformatikerin für Anwendungsentwicklung</li>
+                            <li class="animate width animatedText fromBottom">Erlernen von vielfältigen Kenntnissen in der Softwareentwicklung, Programmiersprachen (Java, Python, SQL) und Netzwerktechnologien</li>
+                            <li class="animate width animatedText fromBottom">Grundlagen des Projektmanagements, Buchführung und Rechnungswesen</li>
+                        </ul>
                     </div>
                     <p class="date animatedText fromRight red">2019 – 2021</p>
                     <div class="timeline-middle">
                         <div class="timeline-circle animatedText fromBottom"></div>
                     </div>
-                    <div class=" timeline-component timeline-content">
+                    <div class=" timeline-component timeline-content" style="margin-bottom: 50px;">
 
-                        <p class="timeline-text animatedText fromLeft">
+                        <p class="animate animatedText fromBottom title">
                             <b> Hochschule für Technik Stuttgart</b><br>
-                            Studienrichtung Informatik
                         </p>
+                        <ul>
+                            <li class="animate width animatedText fromBottom">Bachelorstudium Informatik</li>
+                            <li class="animate width animatedText fromBottom">Einführung in die Grundlagen der Informatik und Mathematik</li>
+                        </ul>
                     </div>
                     <p class="date animatedText fromRight red">2016 - 2018</p>
                     <div class="timeline-middle">
                         <div class="timeline-circle animatedText fromBottom"></div>
                     </div>
-                    <div class=" timeline-component timeline-content">
-
-                        <p class="timeline-text animatedText fromLeft">
-                            <b> Kaufmännisches Schulzentrum Böblingen</b><br>
-                            Berufskolleg 1 & 2 Wirtschaftsinformatik (Fachabitur)
+                    <div class=" timeline-component timeline-content" style="margin-bottom: 50px;">
+                        <p class="animate animatedText fromBottom title">
+                            <b> Kaufmännisches Schulzentrum Böblingen</b>
                         </p>
+                        <ul>
+                            <li class="animate width animatedText fromBottom">Berufskolleg 1 & 2 Wirtschaftsinformatik (Fachabitur)</li>
+                            <li class="animate width animatedText fromBottom">Einführung in die Grundlagen der Informatik und Mathematik</li>
+                        </ul>
+
                     </div>
                     <p class="date animatedText fromRight red" >2013 - 2015</p>
                     <div class="timeline-middle">
                         <div class="timeline-circle animatedText fromBottom"></div>
                     </div>
                     <div class=" timeline-component timeline-content">
-                        <p class="timeline-text animatedText fromLeft">
-                            <b> Berufsschulzentrum Leonberg</b><br>
-                            Berufliches Gymnasium
+                        <p class="animate animatedText fromBottom title">
+                            <b > Berufsschulzentrum Leonberg</b>
                         </p>
+                        <ul>
+                            <li class="animate width animatedText fromBottom">Berufliches Gymnasium</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
     <!--Experince end-->
 
     <!--tech stack start-->
     <div id="scroll2" class="container">
-        <h1 class="color-text title">Tech-Stack</h1>
         <h1>Projekte</h1>
-
         <div class="timeline" >
-            <p class="date animatedText fromRight purple" style="margin-left: 60px;">2024</p>
+            <p class="date animatedText fromRight purple">2024</p>
             <div class="timeline-middle-purple">
                 <div class="timeline-circle-purple  animatedText fromBottom"></div>
             </div>
-            <div class=" timeline-component timeline-content">
-                <p class="timeline-text animatedText fromLeft" >
-                    <b> CV Webseite</b><br><br>
-                    Design und Entwicklung einer CV Webseite <br><br>
-                    <b>Tools: </b> HTML, CSS, JavaScript
+            <div class=" timeline-component timeline-content" style="margin-bottom: 50px;">
+                <p class="animate animatedText fromBottom title">
+
+                    <b> Portfolio Webite</b>
                 </p>
+                <ul>
+                    <li class="animate width animatedText fromBottom">Design und Entwicklung einer Portfolio Webseite</li>
+                    <li class="animate width animatedText fromBottom">Umsetzung mit HTML, CSS und JavaScript</li>
+                </ul>
+
             </div>
 
-            <p class="date animatedText fromRight purple" style="margin-left: 60px;">2024</p>
+            <p class="date animatedText fromRight purple">2024</p>
             <div class="timeline-middle-purple">
                 <div class="timeline-circle-purple  animatedText fromBottom"></div>
             </div>
-            <div class=" timeline-component timeline-content">
-                <p class="timeline-text animatedText fromLeft">
-                    <b> Start up Webseite</b><br><br>
-                    Design und Entwicklung einer Start up Webseite <br><br>
-                    <b>Tools: </b> HTML, CSS, JavaScript
+            <div class=" timeline-component timeline-content" style="margin-bottom: 50px;">
+                <p class="animate animatedText fromBottom title">
+                    <b>Landing Page</b>
                 </p>
+                <ul>
+                    <li class="animate width animatedText fromBottom">Umsetzung eines Rohentwurfs einer Landing Page für ein Start-Up</li>
+                    <li class="animate width animatedText fromBottom">Enge Zusammenarbeit für optimale Umsetzung nach Kundenwünschen</li>
+                    <li class="animate width animatedText fromBottom">Implementierung mit HTML, CSS und JavaScript</li>
+                </ul>
+
             </div>
 
-            <p class="date animatedText fromRight purple" style="margin-left: 60px;">2023</p>
+            <p class="date animatedText fromRight purple">2023</p>
             <div class="timeline-middle-purple">
                 <div class="timeline-circle-purple animatedText fromBottom"></div>
             </div>
-            <div class=" timeline-component timeline-content">
-                <p class="timeline-text animatedText fromLeft">
-                    <b> DiscordReminderBot</b><br><br>
-                    Entwicklung eines Programmes, welches den ausgewählten User nach einer bestimmten Zeit an was erinnert. <br><br>
-                    <b>Tools: </b> Python
+            <div class=" timeline-component timeline-content" style="margin-bottom: 50px;">
+                <p class="animate animatedText fromBottom title">
+                    <b> Discord Reminder Bot</b>
                 </p>
+                <ul>
+                    <li class="animate width animatedText fromBottom">Entwicklung eines Discord Bots zum automatischen Versenden von Erinnerungen</li>
+                    <li class="animate width animatedText fromBottom">Umsetzung mit Python</li>
+                </ul>
+
             </div>
 
-            <p class="date animatedText fromRight purple" style="margin-left: 60px;">2021</p>
+            <p class="date animatedText fromRight purple" >2021</p>
             <div class="timeline-middle-purple">
                 <div class="timeline-circle-purple animatedText fromBottom"></div>
             </div>
-            <div class=" timeline-component timeline-content">
-                <p class="timeline-text animatedText fromLeft">
-                    <b> Blog Webseite</b><br><br>
-                    Design und Entwicklung eine klassische Blog-Website mit PHP und SQL, die Anmelde- und Kommentarfunktionen beinhaltet. <br><br>
-                    <b>Tools: </b> HTML, CSS, PHP, SQL
+            <div class=" timeline-component timeline-content" style="margin-bottom: 50px">
+                <p class="animate animatedText fromBottom title">
+                    <b> Blog Webseite</b>
                 </p>
+                    <ul>
+                        <li class="animate width animatedText fromBottom">Design und Umsetzung einer klassischen Blog-Website, die eine Anmelde- und Kommentarfunktionen beinhaltet</li>
+                        <li class="animate width animatedText fromBottom">Entwicklung mit HTML, CSS, PHP und SQL</li>
+                    </ul>
+
             </div>
         </div>
         <!--skills-->
         <div class="box">
-            <h1>Skills</h1>
+            <h1>Fähigkeiten und Tech-Stack</h1>
             <div class="grid-skills">
                 <img src="../static/imgs/php.png" alt="php" class="logo animatedText">
                 <img src="../static/imgs/sql-server.png" alt="sql" class="logo animatedText">
                 <img src="../static/imgs/html-5.png" alt="html" class="logo animatedText">
                 <img src="../static/imgs/css.png" alt="css" class="logo animatedText">
                 <img src="../static/imgs/java.png" alt="java" class="logo animatedText">
-                <img src="../static/imgs/typo.png" alt="java" class="logo animatedText">
+                <img src="../static/imgs/typo.png" alt="typo3" class="logo animatedText">
             </div>
         </div>
 
@@ -183,22 +213,22 @@
 
     <!--            Personal start -->
     <div id="scroll3" class="container">
-        <h1 class="color-text title" >Personal-Info</h1>
-        <h1>Sprache</h1>
+        <!-- <h1 class="color-text title" >Personal-Info</h1> -->
+        <h1>Meine Sprachen</h1>
         <div class="language">
-            <p>Deutsch</p>
+            <p class="size">Deutsch</p>
             <div class="bar-container">
                 <div class="bar" data-percent="85%"></div>
             </div>
         </div>
         <div class="language">
-            <p>Englisch</p>
+            <p class="size">Englisch</p>
             <div class="bar-container">
                 <div class="bar" data-percent="70%"></div>
             </div>
         </div>
         <div class="language">
-            <p>Tamil</p>
+            <p class="size">Tamil</p>
             <div class="bar-container">
                 <div class="bar" data-percent="60%"></div>
             </div>
@@ -206,11 +236,13 @@
 
         <!--            Hobbys-->
         <div class="box" >
-            <h1 >Hobbys</h1>
-            <p class="fromBottom animatedText">Lesen</p>
-            <p class="fromBottom animatedText">Serien schauen</p>
-            <p class="fromBottom animatedText">Videogames spielen  </p>
-            <p class="fromBottom animatedText">Häckeln</p>
+            <h1 >Freizeit und Hobbys</h1>
+            <ul>
+                <li class="fromBottom animatedText">Lesen</li>
+                <li class="fromBottom animatedText">Serien schauen</li>
+                <li class="fromBottom animatedText">Videogames spielen</li>
+                <li class="fromBottom animatedText">Häkeln</li>
+            </ul>
         </div>
     </div>
     <!--personal end-->

@@ -1,18 +1,20 @@
 window.addEventListener('scroll', function() {
-    const windowHeight = window.innerHeight - 700
     var headerTexts = document.querySelectorAll('.color-text');
-    var scrollPosition = window.scrollY;
+    const scrollPosition = window.scrollY + window.innerHeight / 2;
+    // Positionen der Elemente ermitteln
+    var scroll1 = document.getElementById('scroll1').offsetTop;
+    var scroll2 = document.getElementById('scroll2').offsetTop;
+    var scroll3 = document.getElementById('scroll3').offsetTop;
 
     headerTexts.forEach(function(headerText) {
-        if (scrollPosition > 2800) {
-            headerText.style.color = '#447df8'; // Neue Schriftfarbe beim Scrollen
-        }else if(scrollPosition > 1800){
-            headerText.style.color = '#8A2BE2';// Neue Schriftfarbe beim Scrollen
-        } else if(scrollPosition > windowHeight){
-            headerText.style.color = '#E94057'; // Ursprüngliche Schriftfarbe
-        }else{
+        if (scrollPosition >= scroll3) {
+            headerText.style.color = '#447df8'; // Neue Schriftfarbe für scroll3
+        } else if (scrollPosition >= scroll2) {
+            headerText.style.color = '#8A2BE2'; // Neue Schriftfarbe für scroll2
+        } else if (scrollPosition >= scroll1) {
+            headerText.style.color = '#E94057'; // Neue Schriftfarbe für scroll1
+        } else {
             headerText.style.color = '#e9b340'; // Ursprüngliche Schriftfarbe
-
         }
     });
 });
@@ -20,21 +22,26 @@ window.addEventListener('scroll', function() {
 
 
 window.addEventListener('scroll', function() {
-    const windowHeight = window.innerHeight - 700
+    const scrollPosition = window.scrollY + window.innerHeight / 2;
     var logos = document.querySelectorAll('.logo-nav');
-    var scrollPosition = window.scrollY;
+
+    var scroll1 = document.getElementById('scroll1').offsetTop;
+    var scroll2 = document.getElementById('scroll2').offsetTop;
+    var scroll3 = document.getElementById('scroll3').offsetTop;
 
     var shadowColor;
-    if (scrollPosition > 2800) {
-        shadowColor = '#447df8';
-    } else if (scrollPosition > 1800) {
-        shadowColor = '#8A2BE2';
-    } else if (scrollPosition > windowHeight) {
-        shadowColor = '#E94057';
-    }else {
-        shadowColor = '#e9b340';
 
-    }
+    logos.forEach(function(logos) {
+        if (scrollPosition >= scroll3) {
+            shadowColor = '#447df8';
+        } else if (scrollPosition >= scroll2) {
+            shadowColor = '#8A2BE2';
+        } else if (scrollPosition >= scroll1) {
+            shadowColor = '#E94057';
+        } else {
+            shadowColor = '#e9b340';
+        }
+    });
 
     logos.forEach(function(logo) {
         logo.addEventListener('mouseover', function() {
@@ -106,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// --------
+// ----Sprach bar----
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -136,19 +143,12 @@ document.addEventListener("DOMContentLoaded", function() {
 function updateWidthInStyle() {
     const windowHeight = window.innerHeight
     const windowWidth = window.innerWidth;
-    const myElement = document.getElementById('image');
-    // const myAside = document.getElementById('aside');
     const myImage = document.getElementById('image-container');
+    const myNav = document.getElementById('nav');
 
-
-    // Anwenden der Fensterbreite auf das Element
-    myElement.style.height = `${windowHeight}px`;
-    myElement.style.width = `${windowWidth}px`;
-
-    // myAside.style.height = `${windowHeight}px`;
-    //
-    // myImage.style.width = `${windowWidth}px`;
     myImage.style.height = `${windowHeight}px`;
+
+    myNav.style.width = `${windowWidth}px`;
 }
 
 // Initialer Aufruf
@@ -156,3 +156,121 @@ updateWidthInStyle();
 
 // Aktualisieren bei Größenänderung des Fensters
 window.addEventListener('resize', updateWidthInStyle);
+
+
+// ----------------
+
+function updateStyle() {
+    const windowWidth = window.outerWidth;
+    var title = document.querySelectorAll('.title');
+    var stichpunkte = document.querySelectorAll('.width');
+    var language = document.querySelectorAll('.size');
+
+    if (windowWidth <= 760) {
+        title.forEach(function(element) {
+            element.style.fontSize = '25px';
+        });
+    }
+    if (windowWidth <= 760) {
+        language.forEach(function(element) {
+            element.style.fontSize = '25px';
+        });
+    }
+
+    if (windowWidth <= 687) {
+        stichpunkte.forEach(function(element) {
+            element.style.fontSize = '14px';
+        });
+    }
+    if (windowWidth <= 558) {
+        title.forEach(function(element) {
+            element.style.fontSize = '35px';
+        });
+    }
+    if (windowWidth <= 558) {
+        language.forEach(function(element) {
+            element.style.fontSize = '35px';
+        });
+    }
+}
+
+// Initialer Aufruf
+updateStyle();
+
+// Aktualisieren bei Größenänderung des Fensters
+window.addEventListener('resize', updateStyle);
+
+// -------------------
+
+function updateAnimationClasses() {
+    const elements = document.querySelectorAll('.animate');
+    const width = window.innerWidth;
+
+    elements.forEach(element => {
+        if (width <= 981) {
+            element.classList.remove('fromLeft');
+            element.classList.add('fromBottom');
+            console.log('test');
+        } else {
+            element.classList.remove('fromBottom');
+            element.classList.add('fromLeft');
+            console.log('test1');
+        }
+    });
+}
+
+// Initiale Überprüfung beim Laden der Seite
+window.addEventListener('load', updateAnimationClasses);
+
+// Überprüfung bei Größenänderung des Fensters
+window.addEventListener('resize', updateAnimationClasses);
+
+
+// ---------
+
+document.addEventListener("DOMContentLoaded", function() {
+    const expImg = document.getElementById("exp-img");
+    const laptopImg = document.getElementById("laptop-img");
+    const personImg = document.getElementById("person-img");
+
+    const scroll1 = document.getElementById("scroll1");
+    const scroll2 = document.getElementById("scroll2");
+    const scroll3 = document.getElementById("scroll3");
+
+    window.addEventListener("scroll", function() {
+        const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+        if (isElementInViewport(scroll1, scrollPosition)) {
+            expImg.src = "../static/imgs/exp-red.png";
+            laptopImg.src = "../static/imgs/laptop-white.png";
+            personImg.src = "../static/imgs/person-white.png";
+        } else {
+            expImg.src = "../static/imgs/exp-white.png";
+        }
+
+        if (isElementInViewport(scroll2, scrollPosition)) {
+            expImg.src = "../static/imgs/exp-white.png";
+            laptopImg.src = "../static/imgs/laptop-purple.png";
+            personImg.src = "../static/imgs/person-white.png";
+        } else {
+            laptopImg.src = "../static/imgs/laptop-white.png";
+        }
+
+        if (isElementInViewport(scroll3, scrollPosition)) {
+            expImg.src = "../static/imgs/exp-white.png";
+            laptopImg.src = "../static/imgs/laptop-white.png";
+            personImg.src = "../static/imgs/person-blue.png";
+        } else {
+            personImg.src = "../static/imgs/person-white.png";
+        }
+    });
+
+    function isElementInViewport(element, scrollPosition) {
+        const rect = element.getBoundingClientRect();
+        const elementTop = rect.top + window.scrollY;
+        const elementBottom = elementTop + element.clientHeight;
+
+        return scrollPosition >= elementTop && scrollPosition <= elementBottom;
+    }
+});
+
