@@ -18,4 +18,4 @@ Die Portfolio-Seite kann hier besucht werden: [Link zur Website](https://jennife
 ---
 ⭐ Wenn dir dieses Projekt gefällt, freue ich mich über ein Star auf GitHub! 😊
 
-Flask Backend implementiert by [Falyrion]([https://jennifer-bramadas.de/](https://github.com/Falyrion))
+Flask Backend implementiert by [Falyrion](https://github.com/Falyrion)
