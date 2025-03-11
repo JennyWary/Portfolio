@@ -1,59 +1,48 @@
-<p align="left">
-    <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-    <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
-    <img src="https://img.shields.io/badge/JavaScript-ED8B00?style=for-the-badge&logo=javascript&logoColor=white">
-    <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"/>
-    <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white">
-    <img src="https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white">
-    <img src="https://img.shields.io/badge/gunicorn-%298729.svg?style=for-the-badge&logo=gunicorn&logoColor=white">
-</p>
-
-
 # Portfolio Website
 
-https://jennifer-bramadas.de/
+Dies ist der Quellcode für meine persönliche Portfolio-Webseite. Die Webseite bietet einen Überblick über meine beruflichen Erfahrungen, Projekte, Fähigkeiten und persönliche Interessen.
 
-Die Webseite läuft mit **Flask** als Backend, **gunicorn** als Web Server Gateway Interface und **nginx** als Webserver.
+## 🌟 Live-Demo
+Die Portfolio-Seite kann hier besucht werden: [Link zur Website](#)
 
-## ✨ Hinweise für das Aufsetzen
+## 🔧 Technologien
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: PHP (für bestimmte dynamische Funktionen)
+- **Datenbanken**: SQL
+- **Design**: Google Fonts (Poppins), Animationen mit CSS
 
-> Dieser Absatz ist nur für das erstmalige Aufsetzen des Servers relevant.
+## 📌 Features
+- **Navigation**: Ein übersichtliches Menü mit Icons für schnellen Zugriff.
+- **Berufserfahrung**: Darstellung meiner bisherigen beruflichen Laufbahn.
+- **Ausbildung**: Detaillierte Beschreibung meiner Ausbildung und Abschlüsse.
+- **Projekte**: Übersicht über verschiedene Projekte mit Technologien wie HTML, CSS, JavaScript und PHP.
+- **Fähigkeiten**: Darstellung meines Tech-Stacks mit Logos.
+- **Zertifikate**: Hervorhebung relevanter Zertifizierungen, z. B. "Meta Front-End Developer".
+- **Sprachen & Hobbys**: Informationen über Sprachkenntnisse und persönliche Interessen.
+- **Kontakt & Social Media**: Einfache Kontaktmöglichkeiten und Verlinkungen zu LinkedIn.
 
-Der User der den gunicorn-Service ausführt muss Zugriff auf den in diesem Projektordner erstellten Ordner `data` und das darin erstellte File `tracking.jsonl` erhalten sonst bekommt man Fehlermeldungen. Hierfür am besten vor dem Erstmaligen Aufsetzen des Servers folgende Commands ausführen.
 
-```bash
-mkdir <project_path>/data
-touch <project_path>/data/tracking.jsonl
-chown <user> <project_path>/data
-chown <user> <project_path>/data/tracking.jsonl
+## 📂 Ordnerstruktur
+```
+/ static
+  ├── css/ (Stylesheets)
+  ├── imgs/ (Bilder & Icons)
+  ├── js/ (Skripte)
 ```
 
+## 🚀 Installation & Nutzung
+1. **Repository klonen**:
+   ```bash
+   git clone https://github.com/dein-github-name/portfolio-website.git
+   ```
+2. **Öffne die Datei `index.html`** in einem Browser.
+3. Falls PHP-Funktionen verwendet werden, richte einen lokalen Server ein (z. B. XAMPP oder MAMP).
 
-## ✨ Projektfile updaten
+## 📬 Kontakt
+📧 **E-Mail**: [j.bramadas@outlook.de](mailto:j.bramadas@outlook.de)  
+🔗 **LinkedIn**: [Jennifer Bramadas](https://www.linkedin.com/in/jennifer-b-0a6566157/)  
+📍 **Ort**: Leonberg, 71229
 
-Die Files für das Projekt liegen in `/var/www/portfolio_website`. Zum updaten können diese mit neuen Files ersetzt werden. Danach muss der Webserver neu gestartet werden.
+---
+⭐ Wenn dir dieses Projekt gefällt, freue ich mich über ein Star auf GitHub! 😊
 
-```bash
-# Restart gunicorn
-systemctl restart portfolio_website
-
-# Prüfen des gunicorn status
-systemctl status portfolio_website
-
-# Restart nginx
-systemctl restart nginx
-```
-
-## ✨ Server ausschalten
-
-```bash
-# Ausschalten von gunicorn
-systemctl stop portfolio_website
-
-# Ausschalten von nignx
-systemctl stop nginx
-```
-
-## ✨ Tracking
-
-Die Metadaten zu eingehenden Anfragen liegen im Ordner `data` im Projektordner.
