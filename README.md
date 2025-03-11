@@ -3,7 +3,7 @@
 Dies ist der Quellcode für meine persönliche Portfolio-Webseite. Die Webseite bietet einen Überblick über meine beruflichen Erfahrungen, Projekte, Fähigkeiten und persönliche Interessen.
 
 ## 🌟 Live-Demo
-Die Portfolio-Seite kann hier besucht werden: [Link zur Website](#)
+Die Portfolio-Seite kann hier besucht werden: [Link zur Website](https://jennifer-bramadas.de/)
 
 ## 🔧 Technologien
 - **Frontend**: HTML, CSS, JavaScript
