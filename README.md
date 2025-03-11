@@ -6,10 +6,9 @@ Dies ist der Quellcode für meine persönliche Portfolio-Webseite. Die Webseite 
 Die Portfolio-Seite kann hier besucht werden: [Link zur Website](https://jennifer-bramadas.de/)
 
 ## 🔧 Technologien
-- **Frontend**: HTML, CSS, JavaScript
-- **Backend**: PHP (für bestimmte dynamische Funktionen)
-- **Datenbanken**: SQL
-- **Design**: Google Fonts (Poppins), Animationen mit CSS
+- **Frontend**: <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/JavaScript-ED8B00?style=for-the-badge&logo=javascript&logoColor=white">
 
 ## 📂 Ordnerstruktur
 ```
